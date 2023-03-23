@@ -1,0 +1,81 @@
+<html>
+    <head>
+        <body>
+            <title>form biodata</title>  
+        </body>
+        <form name="frmlogin" method="post" target="_blank" action="biodata.php"></form>
+        <h1 align="center">FORM BIODATA</h1>
+        <hr>
+        <table>
+            <tr>
+                <td>NIM</td>        
+                <td width="20">:</td>
+                <td><input type="text" name="txtnim" size="15" maxlength="10"></td>
+            </tr>
+            <tr>
+                <td>NAMA</td>
+                <td>:</td>
+                <td><input type="text" name="txtnim" size="50" maxlength="100"></td>
+            </tr>
+            <tr>
+                <td>JENIS KELAMIN</td>
+                <td>:</td>
+                <td><input type="radio" name="rbjeniskelamin" value="P" checked> Pria
+                <input type="radio" name="rbjeniskelamin" value="W" checked> Wanita</td>
+            </tr>
+            <tr>
+                <td>JURUSAN</td>
+                <td>:</td>
+                <td>
+                    <select name="1stjurusan">
+                        <option value="">Pilihan ...</option>
+                        <option value="S1 SI">S1 SI</option>
+                        <option value="D3 RPL">D3 RPL</option>
+                        <option value="S1 Farmasi">S1 Farmasi</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>HOBBY</td>
+                <td>:</td>
+                <td><input type="checkbox" name="cbhobby[]" value="Komputer" checked> Komputer
+                <input type="checkbox" name="cbhobby[]" value="Musik" checked> Musik
+                <input type="checkbox" name="cbhobby[]" value="Olahraga" checked> Olahraga
+                <input type="checkbox" name="cbhobby[]" value="Travveling" checked> Travveling</td>       
+            </tr>
+            <tr>
+                <td>CATATAN</td>
+                <td>:</td>
+                <td><textarea name="txtcatatan" cols="100" rows="5"></textarea></td>
+            </tr>
+            <tr>
+                <td>FOTO</td>
+                <td>:</td>
+                <td><input type="file" name="foto" accept="image/*"></td>
+            </tr>
+            <tr>
+                <td>EMAIL</td>
+                <td>:</td>
+                <td><input type="text" name="txtemail" size="50" maxlength="100"></td>
+            </tr>
+            <tr>
+                <td>SANDI LOGIN</td>
+                <td>:</td>
+                <td><input type="password" name="pw"></td>
+            </tr>
+            <tr>
+                <td>ULANGI SANDI LOGIN</td>
+                <td>:</td>
+                <td><input type="password" name="pw"></td>
+            </tr>
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+            <tr>
+                <td><input type="button" name="btnsimpan" value="Simpan">
+                <input type="button" name="btnbatal" value="Batal">
+                <input type="button" name="btnperingatan" value="Peringatan"></td>
+            </tr>
+        </table>
+    </head>
+</html>
