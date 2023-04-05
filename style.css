@@ -1,3 +1,44 @@
-body{
-    background-color: rgb(165, 233, 233);
+.bgcolor {
+    background-image: url(lb6.jpg);
+    background-size: cover;
+}
+
+.txcolor {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+.bgcolor2 {
+    background-color: rgb(2, 2, 56);
+    opacity: 0.7;
+}
+
+.button1 {
+    transition-duration: 0.4s;
+    font-size: 16px;
+}
+
+.hover {
+    background-color: green;
+    color: white;
+}
+
+.button2 {
+    transition-duration: 0.4;
+    font-size: 16px;
+}
+
+.hover2 {
+    background-color: red;
+    color: white;
+}
+
+.button3 {
+    transition-duration: 0.4;
+    font-size: 16px;
+}
+
+.hover3 {
+    background-color: yellow;
+    color: black;
 }
