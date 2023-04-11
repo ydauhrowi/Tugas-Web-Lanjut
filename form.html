@@ -1,88 +1,93 @@
 <html>
     <head>
         <title>Belajar Membuat Form Biodata</title>  
-        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" href="bootstrap-5.3.0-alpha3-dist/css/bootstrap.css">
     </head>
-    <body class="bgcolor">
-        <h1 class="txcolor bgcolor2" align="center">FORM BIODATA</h1>
+    <body>
+        <div class="container">
+        <h1 class="alert alert-primary mt-3 text-center">FORM BIODATA</h1>
         <form action="" method="post">
         
-        <table class="txcolor" border="0" align="center">
-            <tr>
-                <td>NIM</td>        
-                <td>:</td>
-                <td><input type="text" name="txtnim" size="15" maxlength="10"></td>
-            </tr>
-            <tr>
-                <td>NAMA</td>
-                <td>:</td>
-                <td><input type="text" name="txtnim" size="50" maxlength="100"></td>
-            </tr>
-            <tr>
-                <td>JENIS KELAMIN</td>
-                <td>:</td>
-                <td>
-                    <input type="radio" name="rbjeniskelamin" value="P"> Pria
-                    <input type="radio" name="rbjeniskelamin" value="W"> Wanita
-                    </td>
-            </tr>
-            <tr>
-                <td>JURUSAN</td>
-                <td>:</td>
-                <td>
-                    <select name="1stjurusan">
-                        <option value="">Pilihan ...</option>
+        <table>
+                <div class="form-group">
+                    <label>NIM</label>       
+                    <input class="form-control" type="text" name="txtnim" placeholder="Masukkan NIM Anda" required>
+                </div>
+                <hr>
+
+                <div class="form-group">
+                    <label>Nama Lengkap</label>       
+                    <input class="form-control" type="text" name="txtnim" placeholder="Masukkan Nama Lengkap Lengkap Anda">
+                </div>
+                <hr>
+
+                <div class="form-group">
+                    <label>Jenis Kelamin</label><br>
+                    <div class="form-check-inline">
+                        <input type="radio" class="form-check-input" name="rbjeniskelamin" value="P"> Pria
+                    </div>
+                    <div class="form-check-inline">
+                        <input type="radio" class="form-check-input" name="rbjeniskelamin" value="P"> Wanita
+                    </div>        
+                </div>
+                <hr>
+
+                <div class="form-group">
+                <label>Jurusan</label><br>
+                    <select class="form-control">
+                        <option value="">Pilih Jurusan</option>
                         <option value="S1 SI">S1 SI</option>
                         <option value="D3 RPL">D3 RPL</option>
                         <option value="S1 Farmasi">S1 Farmasi</option>
                     </select>
-                </td>
-            </tr>
-            <tr>
-                <td>HOBBY</td>
-                <td>:</td>
-                <td>
-                    <input type="checkbox" name="cbhobby[]" value="Komputer"> Komputer
-                    <input type="checkbox" name="cbhobby[]" value="Musik"> Musik
-                    <input type="checkbox" name="cbhobby[]" value="Olahraga"> Olahraga
-                    <input type="checkbox" name="cbhobby[]" value="Travveling"> Travelling
-                </td>       
-            </tr>
-            <tr>
-                <td>CATATAN</td>
-                <td>:</td>
-                <td><textarea name="txtcatatan" cols="50" rows="5"></textarea></td>
-            </tr>
-            <tr>
-                <td>FOTO</td>
-                <td>:</td>
-                <td><input type="file" name="foto" accept="image/*"></td>
-            </tr>
-            <tr>
-                <td>EMAIL</td>
-                <td>:</td>
-                <td><input type="text" name="txtemail" size="50" maxlength="100"></td>
-            </tr>
-            <tr>
-                <td>SANDI LOGIN</td>
-                <td>:</td>
-                <td><input type="password" name="pw"></td>
-            </tr>
-            <tr>
-                <td>ULANGI SANDI LOGIN</td>
-                <td>:</td>
-                <td><input type="password" name="pw"></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td>
-                    <input class="button1 hover" type="button" name="btnsimpan" value="Simpan">
-                    <input class="button2 hover2" type="button" name="btnbatal" value="Batal">
-                    <input class="button3 hover3" type="button" name="btnperingatan" value="Peringatan">
-                </td>
-            </tr>
-        </body>
+                </div>
+                <hr>
 
-        </table> 
+                <div class="form-group">
+                <label>Hobby</label><br>
+                    <input class="form-check-input" type="checkbox" name="cbhobby[]" value="Komputer"> Komputer
+                    <input class="form-check-input" type="checkbox" name="cbhobby[]" value="Musik"> Musik
+                    <input class="form-check-input" type="checkbox" name="cbhobby[]" value="Olahraga"> Olahraga
+                    <input class="form-check-input" type="checkbox" name="cbhobby[]" value="Travveling"> Travelling
+                </div>  
+                <hr>
+
+                <div class="form-group">
+                    <label>Catatan</label>
+                    <textarea class="form-control" name="txtcatatan" cols="50" rows="5" placeholder="Masukkan Alasan Anda Memilih Jurusan Ini"></textarea>
+                </div>
+                <hr>
+
+                <div class="form-group">
+                    <label>Foto</label><br>
+                    <input class="form-control-file" type="file" name="foto" accept="image/*">
+                    <small>Upload File Foto dengan Ukuran Maksimal 2MB</small>
+                </div>
+                <hr>
+
+                <div class="form-group">
+                    <label>Email</label>
+                    <input class="form-control" type="text" name="" placeholder="Masukkan Email Anda">
+                </div>  
+                <hr>
+
+                <div class="form-group">
+                    <label>Kata Sandi</label>
+                    <input class="form-control" type="password" name="pw" placeholder="Masukkan Kata Sandi Anda">
+                    <small>*Password harus terdiri dari angka dan huruf dan minimal 6 karakter</small>
+                </div>
+                <hr>
+
+                <div class="form-group">
+                    <label>Konfirmasi Kata Sandi</label>
+                    <input class="form-control" type="password" name="pw" placeholder="Konfirmasi Kata Sandi Anda">
+                </div>
+                <hr>
+
+                <button type="submit" class="btn btn-primary me-2">SIMPAN</button>
+                <button type="submit" class="btn btn-danger me-2">BATAL</button>
+                <button type="submit" class="btn btn-warning me-2">PERINGATAN</button>
+        </div>
+        </body>
+     </table> 
 </html>
